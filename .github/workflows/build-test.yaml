@@ -23,8 +23,5 @@ jobs:
       - name: Install dependencies
         run: rush install
 
-      - name: Test
-        run: rush test
-
       - name: Build
         run: rush build
