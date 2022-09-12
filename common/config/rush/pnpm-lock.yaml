@@ -14,6 +14,7 @@ importers:
       '@types/react': ^17
       '@types/react-dom': ^17
       husky: 4.3.8
+      lib-1: workspace:*
       lint-staged: ^11.2.6
       prettier: ^2.6.2
       react: ^17.0.1
@@ -22,6 +23,7 @@ importers:
       typescript: ^4
     dependencies:
       '@modern-js/runtime': 1.18.0_0d16f3488871bfd9955d19cbdf30c643
+      lib-1: link:../../packages/lib-1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     devDependencies:

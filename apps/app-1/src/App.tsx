@@ -1,6 +1,9 @@
 import { Switch, Route } from '@modern-js/runtime/router';
-
+import { enhancedSum } from 'lib-1';
 import './App.css';
+
+// eslint-disable-next-line no-console
+console.log(enhancedSum(1, 2));
 
 const App = () => (
   <Switch>
@@ -31,7 +34,8 @@ const App = () => (
               href="https://modernjs.dev/coming-soon"
               target="_blank"
               rel="noopener noreferrer"
-              className="card">
+              className="card"
+            >
               <h2>Community </h2>
             </a>
           </div>
@@ -40,12 +44,12 @@ const App = () => (
           <a
             href="https://modernjs.dev"
             target="_blank"
-            rel="noopener noreferrer">
+            rel="noopener noreferrer"
+          >
             Powered by Modern.js
           </a>
         </footer>
       </div>
-
     </Route>
     <Route path="*">
       <div>404</div>
