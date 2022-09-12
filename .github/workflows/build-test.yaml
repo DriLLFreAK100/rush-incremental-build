@@ -1,0 +1,30 @@
+name: Build and Test
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.15.0
+
+      - name: Setup Rush
+        run: npm i -g pnpm@7.11.0 @microsoft/rush@5.77.3
+
+      - name: Install dependencies
+        run: rush install
+
+      - name: Test
+        run: rush test
+
+      - name: Build
+        run: rush build
