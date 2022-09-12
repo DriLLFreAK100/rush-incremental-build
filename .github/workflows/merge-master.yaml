@@ -1,7 +1,9 @@
-name: Build and Test
+name: Merge Master
 
 on:
   pull_request:
+    types:
+      - closed
     branches:
       - main
 
@@ -26,7 +28,7 @@ jobs:
       - name: Build
         run: rush build
 
-      - name: GitHub Context
+      - name: Cache Rush Artifact
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
         run: echo "$GITHUB_CONTEXT"
