@@ -3,7 +3,7 @@ import { enhancedSum } from 'lib-1';
 import './App.css';
 
 // eslint-disable-next-line no-console
-console.log(enhancedSum(1, 2));
+console.log(enhancedSum(1, 3));
 
 const App = () => (
   <Switch>
