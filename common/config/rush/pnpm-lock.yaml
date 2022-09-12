@@ -72,6 +72,7 @@ importers:
   ../../packages/lib-1:
     specifiers:
       '@size-limit/preset-small-lib': ^8.1.0
+      '@types/node': ^14
       husky: ^8.0.1
       lib-2: workspace:*
       size-limit: ^8.1.0
@@ -82,15 +83,17 @@ importers:
       lib-2: link:../lib-2
     devDependencies:
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
+      '@types/node': 14.18.28
       husky: 8.0.1
       size-limit: 8.1.0
-      tsdx: 0.14.1
+      tsdx: 0.14.1_@types+node@14.18.28
       tslib: 2.4.0
       typescript: 3.9.10
 
   ../../packages/lib-2:
     specifiers:
       '@size-limit/preset-small-lib': ^8.1.0
+      '@types/node': ^14
       husky: ^8.0.1
       size-limit: ^8.1.0
       tsdx: ^0.14.1
@@ -98,9 +101,10 @@ importers:
       typescript: ^3.9.10
     devDependencies:
       '@size-limit/preset-small-lib': 8.1.0_size-limit@8.1.0
+      '@types/node': 14.18.28
       husky: 8.0.1
       size-limit: 8.1.0
-      tsdx: 0.14.1
+      tsdx: 0.14.1_@types+node@14.18.28
       tslib: 2.4.0
       typescript: 3.9.10
 
@@ -9812,7 +9816,7 @@ packages:
       hash-base: 3.1.0
       inherits: 2.0.4
 
-  /rollup-plugin-sourcemaps/0.6.3_rollup@1.32.1:
+  /rollup-plugin-sourcemaps/0.6.3_115a54a5d1657cced9f98b5043b4d188:
     resolution: {integrity: sha512-paFu+nT1xvuO1tPFYXGe+XnQvg4Hjqv/eIhG8i5EspfYYPBKL57X7iVbfv55aNVASg3dzWvES9dmWsL2KhfByw==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
@@ -9823,6 +9827,7 @@ packages:
         optional: true
     dependencies:
       '@rollup/pluginutils': 3.1.0_rollup@1.32.1
+      '@types/node': 14.18.28
       rollup: 1.32.1
       source-map-resolve: 0.6.0
     dev: true
@@ -10853,7 +10858,7 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tsdx/0.14.1:
+  /tsdx/0.14.1_@types+node@14.18.28:
     resolution: {integrity: sha512-keHmFdCL2kx5nYFlBdbE3639HQ2v9iGedAFAajobrUTH2wfX0nLPdDhbHv+GHLQZqf0c5ur1XteE8ek/+Eyj5w==}
     engines: {node: '>=10'}
     hasBin: true
@@ -10904,7 +10909,7 @@ packages:
       progress-estimator: 0.2.2
       regenerator-runtime: 0.13.9
       rollup: 1.32.1
-      rollup-plugin-sourcemaps: 0.6.3_rollup@1.32.1
+      rollup-plugin-sourcemaps: 0.6.3_115a54a5d1657cced9f98b5043b4d188
       rollup-plugin-terser: 5.3.1_rollup@1.32.1
       rollup-plugin-typescript2: 0.27.3_rollup@1.32.1+typescript@3.9.10
       sade: 1.8.1
